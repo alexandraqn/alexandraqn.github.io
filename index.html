@@ -5,6 +5,7 @@
   <title>Alexandra Quiñones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* Base Styles */
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
@@ -20,6 +21,7 @@
       text-align: center;
     }
 
+    /* Name & Subtitle */
     h1 {
       font-size: 2.8rem;
       margin-bottom: 8px;
@@ -28,27 +30,69 @@
 
     .subtitle {
       font-size: 1.2rem;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       color: #555;
     }
 
-    p {
-      margin-bottom: 30px;
+    /* Section Styling */
+    .section {
+      margin-top: 60px;
     }
 
-    a {
+    .section h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .section p {
+      font-size: 1.05rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .section ul li {
+      margin: 6px 0;
+    }
+
+    /* Links */
+    .links {
+      margin-top: 40px;
+    }
+
+    .links a {
       color: #444;
       text-decoration: none;
       margin: 0 14px;
+      font-weight: 500;
       transition: opacity 0.2s ease;
     }
 
-    a:hover {
+    .links a:hover {
       opacity: 0.6;
     }
 
-    .links {
-      margin-top: 30px;
+    /* Optional: smaller spacing on mobile */
+    @media (max-width: 600px) {
+      .container {
+        margin: 60px 20px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+      .section h2 {
+        font-size: 1.15rem;
+      }
     }
   </style>
 </head>
@@ -56,6 +100,7 @@
 
 <div class="container">
 
+  <!-- Name & Subtitle -->
   <h1>Alexandra Quiñones</h1>
   <div class="subtitle">
     PhD Candidate in Economics · University of York
@@ -66,8 +111,8 @@
     <h2>Education</h2>
     <p>
       PhD Candidate, Economics, University of York, U.K. <br>
-      Master Dev. Economics (advanced) , University of Queensland, Australia <br>
-      BSc Economic Eng. , Universad Científica del Sur, Peru <br>
+      Master Development Economics (advanced), University of Queensland, Australia <br>
+      BSc Economic Engineering, Universidad Científica del Sur, Peru
     </p>
   </div>
 
@@ -87,7 +132,7 @@
     <a href="/cv.html">CV</a>
   </div>
 
-  <!-- Optional Projects -->
+  <!-- Projects -->
   <div class="section">
     <h2>Projects</h2>
     <ul>
@@ -97,5 +142,6 @@
   </div>
 
 </div>
+
 </body>
 </html>
