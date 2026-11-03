@@ -14,7 +14,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.65;
             color: var(--text-main);
             max-width: 760px;
             margin: 0 auto;
@@ -43,81 +43,46 @@
             font-size: 1.8rem;
             font-weight: 600;
             letter-spacing: -0.02em;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
         }
 
-        .subtitle {
-            color: var(--text-muted);
-            margin-bottom: 36px;
-            font-size: 1.05rem;
+        p.policy-summary {
+            font-size: 0.98rem;
+            color: #2b2b2b;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 32px;
         }
 
         h2 {
             font-size: 1.15rem;
             font-weight: 600;
-            margin-top: 40px;
+            margin-top: 36px;
             margin-bottom: 16px;
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .role-list, .report-list {
+        .report-list {
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
-        .role-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            padding: 12px 0;
-            border-bottom: 1px dashed var(--border-color);
-            font-size: 0.95rem;
-        }
-
-        .role-info {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .role-title {
-            font-weight: 600;
-            color: var(--text-main);
-        }
-
-        .org-name {
-            color: var(--text-muted);
-            font-size: 0.88rem;
-        }
-
-        .role-date {
-            color: var(--text-muted);
-            font-size: 0.88rem;
-            font-variant-numeric: tabular-nums;
-            white-space: nowrap;
-            margin-left: 16px;
-        }
-
         .report-item {
-            padding: 10px 0;
+            padding: 12px 0;
             font-size: 0.93rem;
             border-bottom: 1px dashed var(--border-color);
+            line-height: 1.5;
+        }
+
+        .report-item:last-child {
+            border-bottom: none;
         }
 
         .report-org {
             font-weight: 600;
             color: var(--text-main);
-        }
-
-        @media (max-width: 550px) {
-            .role-item {
-                flex-direction: column;
-                gap: 4px;
-            }
-            .role-date {
-                margin-left: 0;
-            }
         }
     </style>
 </head>
@@ -125,65 +90,20 @@
 
     <a href="index.html" class="back-link">← Back to Academic Homepage</a>
 
-    <h1>Policy & Advisory Roles</h1>
-    <p class="subtitle">International development, health financing, and econometric policy evaluation.</p>
+    <h1>Policy & Advisory Experience</h1>
+
+    <p class="policy-summary">
+        Across ten years of international development and policy evaluation work, I have delivered micro-econometric analysis, health financing advisory, and program management for multilateral institutions, government ministries, and international consulting firms. As a Short-Term Consultant for The World Bank Group, I focused on health, poverty, and labor survey microdata harmonization, and served as Resident Advisor for survey design at the Liberian Institute of Statistics and Geo-Information Services (LISGIS). At NIRAS Denmark, I worked primarily as Project Manager and lead tender writer for European Commission framework contracts and public health bids. My advisory track record also includes serving as Senior Associate in Sustainable Health Financing with the Clinton Health Access Initiative (CHAI) in Malawi, alongside econometric consulting roles for the Liberia Revenue Authority and the Ministry of Energy and Mines in Peru.
+    </p>
 
     <section>
-        <h2>Positions</h2>
-        <ul class="role-list">
-            <li class="role-item">
-                <div class="role-info">
-                    <span class="role-title">Short-Term Consultant (Health, Poverty & Labour Microdata)</span>
-                    <span class="org-name">The World Bank Group</span>
-                </div>
-                <span class="role-date">2021 – 2024</span>
-            </li>
-            <li class="role-item">
-                <div class="role-info">
-                    <span class="role-title">Health Financing & Policy Consultant</span>
-                    <span class="org-name">NIRAS Denmark (European Commission Framework Contracts)</span>
-                </div>
-                <span class="role-date">2018 – 2022</span>
-            </li>
-            <li class="role-item">
-                <div class="role-info">
-                    <span class="role-title">Senior Associate, Sustainable Health Financing</span>
-                    <span class="org-name">Clinton Health Access Initiative (CHAI) — Malawi</span>
-                </div>
-                <span class="role-date">2019 – 2020</span>
-            </li>
-            <li class="role-item">
-                <div class="role-info">
-                    <span class="role-title">Resident Advisor (Statistics & Microdata)</span>
-                    <span class="org-name">World Bank Group / Liberian Institute of Statistics (LISGIS)</span>
-                </div>
-                <span class="role-date">2017</span>
-            </li>
-            <li class="role-item">
-                <div class="role-info">
-                    <span class="role-title">Econometric Modelling & Policy Consultant</span>
-                    <span class="org-name">Liberia Revenue Authority (IMF / Donor Funded)</span>
-                </div>
-                <span class="role-date">2016 – 2017</span>
-            </li>
-            <li class="role-item">
-                <div class="role-info">
-                    <span class="role-title">Econometric Policy Consultant</span>
-                    <span class="org-name">Ministry of Energy and Mines, Peru</span>
-                </div>
-                <span class="role-date">2015 – 2016</span>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Technical Reports</h2>
+        <h2>Selected Policy Outputs & Technical Reports</h2>
         <ul class="report-list">
             <li class="report-item">
-                <span class="report-org">World Bank (2025):</span> Baseline Assessment of Results-Based Financing in Uganda
+                <span class="report-org">World Bank Group (2025):</span> Baseline Assessment of Results-Based Financing in Uganda
             </li>
             <li class="report-item">
-                <span class="report-org">World Bank (2025):</span> Resource Pooling Options for Health in Uganda
+                <span class="report-org">World Bank Group (2025):</span> Resource Pooling Options for Health in Uganda
             </li>
             <li class="report-item">
                 <span class="report-org">Government of Malawi (2020):</span> National Strategic Plan for HIV/AIDS 2020–2025
