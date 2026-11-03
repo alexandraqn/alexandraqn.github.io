@@ -3,115 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandra Quiñones Nunura | Econometrician & Research Economist</title>
+    <title>Alexandra Quiñones Nunura | PhD Candidate in Economics</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fcfcfc;
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #171717;
+            --text-muted: #666666;
+            --border-color: #e5e5e5;
+            --accent-bg: #f9f9f9;
         }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            background-color: var(--bg-color);
+            -webkit-font-smoothing: antialiased;
+        }
+
         .header {
             display: flex;
-            align-items: center;
-            gap: 30px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 28px;
+            margin-bottom: 40px;
         }
+
         .profile-photo {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            border-radius: 6px;
             object-fit: cover;
-            /* Adjusts vertical position to center face properly without cropping the top */
-            object-position: center 30%; 
-            border: 3px solid #e2e8f0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+            object-position: center top;
+            border: 1px solid var(--border-color);
+            flex-shrink: 0;
         }
+
         .header-text h1 {
-            margin: 0 0 5px 0;
-            font-size: 2.1rem;
-            color: #1a202c;
+            margin: 0 0 4px 0;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
         }
+
         .header-text p {
-            margin: 0 0 14px 0;
+            margin: 0 0 16px 0;
             font-size: 1.05rem;
-            color: #4a5568;
+            color: var(--text-muted);
         }
-        .links a {
-            display: inline-block;
-            margin-right: 8px;
-            margin-bottom: 8px;
-            padding: 6px 14px;
-            background-color: #2b6cb0;
-            color: white;
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .nav-links a {
+            font-size: 0.88rem;
+            color: var(--text-main);
             text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: 500;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2px;
+            transition: border-color 0.2s ease;
         }
-        .links a:hover {
-            background-color: #2c5282;
+
+        .nav-links a:hover {
+            border-color: var(--text-main);
         }
+
         section {
-            margin-bottom: 35px;
+            margin-bottom: 44px;
         }
+
         h2 {
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 6px;
-            color: #2d3748;
-            font-size: 1.35rem;
+            font-size: 1.15rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
         }
-        .jmp-box {
-            background-color: #f7fafc;
-            border-left: 4px solid #2b6cb0;
-            padding: 22px;
-            border-radius: 0 6px 6px 0;
-            margin-top: 15px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+        .jmp-card {
+            background-color: var(--accent-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 24px;
+            margin-top: 12px;
         }
+
+        .badge {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            display: block;
+        }
+
         .paper-title {
-            font-weight: bold;
             font-size: 1.1rem;
-            color: #1a202c;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 4px;
         }
+
         .authors {
-            font-style: italic;
-            color: #4a5568;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
             margin-bottom: 12px;
         }
+
         .pointers {
-            margin-top: 10px;
             padding-left: 18px;
-            font-size: 0.95rem;
+            margin: 12px 0 0 0;
+            font-size: 0.93rem;
         }
+
         .pointers li {
             margin-bottom: 6px;
         }
-        .request-note {
-            margin-top: 14px;
-            font-size: 0.88rem;
-            color: #718096;
-            font-style: italic;
+
+        .note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 12px;
         }
-        .badge {
-            background-color: #2b6cb0;
-            color: white;
-            padding: 3px 10px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            letter-spacing: 0.5px;
+
+        .paper-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
-        ul.simple-list {
-            padding-left: 20px;
+
+        .paper-item {
+            margin-bottom: 24px;
         }
-        ul.simple-list li {
-            margin-bottom: 18px;
+
+        .conf-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .conf-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.93rem;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .conf-date {
+            color: var(--text-muted);
+            font-variant-numeric: tabular-nums;
+        }
+
+        @media (max-width: 550px) {
+            .header {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+            .conf-item {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -122,104 +185,117 @@
         <div class="header-text">
             <h1>Alexandra Quiñones Nunura</h1>
             <p>PhD Candidate in Economics · University of York</p>
-            <div class="links">
-                <a href="mailto:adqn500@york.ac.uk">Email Contact</a>
+            <nav class="nav-links">
+                <a href="mailto:adqn500@york.ac.uk">Email</a>
                 <a href="https://www.linkedin.com/in/alexandraqn/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/alexandraqn" target="_blank">GitHub</a>
-            </div>
+                <a href="policy.html">Policy & Consulting Experience →</a>
+            </nav>
         </div>
     </header>
 
     <section>
-        <h2>About Me</h2>
+        <h2>About</h2>
         <p>
             I am an applied microeconomist completing my PhD in Economics at the University of York (Thesis submitted: Sep 2026; Viva: Dec 7, 2026), supervised by Prof. Luigi Siciliani and Dr. Sumit Mazumdar.
         </p>
         <p>
-            My research combines advanced causal inference methods with 10 years of international policy evaluation experience across the World Bank Group, the Clinton Health Access Initiative (CHAI), and European Commission framework programs.
+            My research primary fields are <strong>Applied Micro-econometrics</strong>, <strong>Health Economics</strong>, <strong>Labour Economics</strong>, and <strong>Development Economics</strong>, with a focus on quantitative causal inference and program evaluation.
         </p>
     </section>
 
     <section>
         <h2>Job Market Paper</h2>
-        <div class="jmp-box">
-            <span class="badge">JOB MARKET PAPER</span>
-            <div class="paper-title" style="margin-top: 10px;">
-                The Effect of Public Health Insurance on Labour Supply: Evidence from Indonesia's Askeskin Programme
+        <div class="jmp-card">
+            <span class="badge">Job Market Paper · Single-Authored</span>
+            <div class="paper-title">
+                The Impact of Expanding Child Health Insurance on Parental Labour Supply: Evidence from Mexico's Seguro Popular
             </div>
-            <div class="authors">with Dr. Julia Hatamyar</div>
+            <div class="authors">Single-authored Working Paper</div>
             
             <ul class="pointers">
-                <li><strong>Research Question:</strong> Evaluates how subsidized public health insurance expansion influences labor market retention and working hours in developing economy settings.</li>
-                <li><strong>Data & Method:</strong> Applied doubly robust difference-in-differences (DiD) estimation on national household survey panel microdata (SUSENAS, <em>N = 13,000</em>).</li>
-                <li><strong>Key Findings:</strong> Subsidized coverage mitigates health-related exits from informal sector employment while reducing working hours by 1.3 hours/week among female cohabitants, without distorting overall labor force participation.</li>
-                <li><strong>Target Journal:</strong> <em>World Development</em> (Presented at EEA 2026, EuHEA 2026, HESG 2026).</li>
+                <li><strong>Identification Strategy:</strong> Sharp Regression Discontinuity Design (RDD) executed at the age eligibility cutoff across 8 consecutive quarterly rounds of national Mexican Labour Force Survey microdata (ENOE).</li>
+                <li><strong>Key Empirical Finding:</strong> Demonstrates that while overall parental employment effects remain neutral, mothers in beneficiary households increase labor supply by 2 hours per month.</li>
+                <li><strong>Target Journal:</strong> <em>World Development</em></li>
             </ul>
 
-            <div class="request-note">
-                📄 <em>Full manuscript, online appendix, and code available via EconJobMarket or upon email request.</em>
+            <div class="note">
+                Manuscript, code, and online appendix available via EconJobMarket or upon request.
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Selected Working Papers & Research</h2>
-        <ul class="simple-list">
-            <li>
-                <div class="paper-title">The Impact of Expanding Child Health Insurance on Parental Labour Supply: Evidence from Mexico's Seguro Popular</div>
-                <div class="authors">Single-authored Working Paper</div>
+        <h2>Working Papers & Research in Progress</h2>
+        <ul class="paper-list">
+            <li class="paper-item">
+                <div class="paper-title">The Effect of Public Health Insurance on Labour Supply: Evidence from Indonesia's Askeskin Programme</div>
+                <div class="authors">with Dr. Julia Hatamyar</div>
                 <ul class="pointers">
-                    <li><strong>Methodology:</strong> Sharp Regression Discontinuity Design (RDD) executed at the age eligibility cutoff across 8 consecutive quarterly rounds of Mexican Labour Force Survey (ENOE) microdata.</li>
-                    <li><strong>Core Result:</strong> Demonstrates that while overall parental employment remains neutral, mothers in beneficiary households increase labor supply by 2 hours per month.</li>
+                    <li><strong>Methodology:</strong> Doubly robust difference-in-differences (DiD) estimation on national panel survey microdata (SUSENAS, <em>N = 13,000</em>).</li>
+                    <li><strong>Core Finding:</strong> Subsidized health insurance mitigates health-related exits from informal sector employment while reducing working hours by 1.3 hours/week among female cohabitants.</li>
                 </ul>
-                <div class="request-note">📄 <em>Draft available upon request.</em></div>
             </li>
-            <li>
+            <li class="paper-item">
                 <div class="paper-title">Hospitalisations and Labour Supply: Evidence from Indonesia</div>
                 <div class="authors">with Dr. Julia Hatamyar and Prof. Luigi Siciliani</div>
                 <ul class="pointers">
-                    <li><strong>Methodology:</strong> Micro-econometric modeling and matching techniques on panel microdata (SUSENAS).</li>
-                    <li><strong>Core Result:</strong> Identifies a 4-percentage point decrease in female cohabitant employment driven by household caregiving burdens following health shocks.</li>
+                    <li><strong>Methodology:</strong> Micro-econometric panel modeling and matching techniques. Target Journal: <em>Social Science & Medicine</em>.</li>
                 </ul>
-                <div class="request-note">📄 <em>Draft available upon request.</em></div>
             </li>
-            <li>
+            <li class="paper-item">
                 <div class="paper-title">The Relationship Between Insulin Prices and the COMISCA Joint Negotiation Mechanism</div>
                 <div class="authors">with Prof. R. Moreno-Serra, M. Campos, P. Lagos, and M. García Gonzales</div>
                 <ul class="pointers">
-                    <li><strong>Methodology:</strong> Event-study framework applied to pharmaceutical procurement microdata across 5 Central American countries.</li>
+                    <li><strong>Methodology:</strong> Event-study framework on pharmaceutical procurement microdata across 5 Central American countries.</li>
                 </ul>
-                <div class="request-note">📄 <em>Research in progress.</em></div>
             </li>
         </ul>
     </section>
 
     <section>
-        <h2>Professional Experience Highlights</h2>
-        <ul class="pointers">
-            <li><strong>World Bank Group (2021–2024):</strong> Harmonized 250+ national labor force and household survey micro-datasets across 100+ LMICs for the Global Labour Database; peer-reviewed causal inference methodologies for health sector publications.</li>
-            <li><strong>Clinton Health Access Initiative (2019–2020):</strong> Senior Associate delivering health budget planning and cost-efficiency modeling for Global Fund ($600M budgeted) and Gates Foundation proposals in Malawi.</li>
-            <li><strong>NIRAS Denmark / EU Framework (2018–2022):</strong> Prepared technical evaluation frameworks for 20+ EU-funded public health projects (€30M–€200M+) across Southern Africa and Latin America.</li>
-            <li><strong>Liberian Institute of Statistics & Ministry of Energy Peru (2015–2017):</strong> Co-directed national survey sampling design; built tax micro-simulation models and rural energy subsidy evaluations.</li>
+        <h2>Conferences & Research Presentations</h2>
+        <ul class="conf-list">
+            <li class="conf-item">
+                <span>European Economic Association (EEA) Annual Congress — Dublin, Ireland</span>
+                <span class="conf-date">Aug 2026</span>
+            </li>
+            <li class="conf-item">
+                <span>Health Economists' Study Group (HESG) — University of Glasgow, UK</span>
+                <span class="conf-date">Jun 2026</span>
+            </li>
+            <li class="conf-item">
+                <span>European Health Economics Association (EuHEA) Conference — Rotterdam, Netherlands</span>
+                <span class="conf-date">Jun 2026</span>
+            </li>
+            <li class="conf-item">
+                <span>Health Economics Seminar for Indonesian Policy Makers — University of York, UK</span>
+                <span class="conf-date">Nov 2025</span>
+            </li>
+            <li class="conf-item">
+                <span>Global Health Seminar — Centre for Health Economics (CHE), York, UK</span>
+                <span class="conf-date">May 2025</span>
+            </li>
+            <li class="conf-item">
+                <span>Health Economists Data Group (HEDG) Seminar — University of York, UK</span>
+                <span class="conf-date">2023 – 2024</span>
+            </li>
         </ul>
-        <div class="request-note" style="margin-top: 10px;">
-            📄 <em>Full academic CV available on EconJobMarket or upon email request.</em>
-        </div>
     </section>
 
     <section>
-        <h2>Teaching & Academic Recognition</h2>
+        <h2>Teaching & Awards</h2>
         <ul class="pointers">
-            <li><strong>Aronson Teaching Prize (2023):</strong> Awarded for outstanding undergraduate module teaching performance in Health Economics and Applied Econometrics at the University of York.</li>
-            <li><strong>Graduate Teaching Assistant (2022–2026):</strong> Delivered weekly seminars in Health Economics, Economic Data Analysis, Probability & Statistics, and Foundations of Economic History.</li>
+            <li><strong>Aronson Teaching Prize (2023):</strong> Awarded for outstanding undergraduate teaching performance in Health Economics and Data Analysis (University of York).</li>
+            <li><strong>Graduate Teaching Assistant (2022–2026):</strong> Seminars in Health Economics, Economic Data Analysis, Probability & Statistics, and Foundations of Economic History.</li>
         </ul>
     </section>
 
     <section>
         <h2>Education</h2>
         <ul class="pointers">
-            <li><strong>PhD in Economics (Health Economics):</strong> University of York, UK (2022–2026)</li>
-            <li><strong>Postgraduate Certificate in Infectious Diseases:</strong> London School of Hygiene & Tropical Medicine (LSHTM), UK (2020–2022)</li>
+            <li><strong>PhD in Economics:</strong> University of York, UK (2022–2026)</li>
+            <li><strong>PgCert in Infectious Diseases:</strong> London School of Hygiene & Tropical Medicine (LSHTM), UK (2020–2022)</li>
             <li><strong>Master of Development Economics (Advanced):</strong> University of Queensland, Australia (2013–2014)</li>
             <li><strong>BSc in Economics Engineering and Business:</strong> Universidad Científica del Sur, Peru (2007–2011)</li>
         </ul>
