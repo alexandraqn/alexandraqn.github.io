@@ -26,6 +26,8 @@
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
+            /* Adjusts vertical position to center face properly without cropping the top */
+            object-position: center 30%; 
             border: 3px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.08);
         }
@@ -41,7 +43,7 @@
         }
         .links a {
             display: inline-block;
-            margin-right: 10px;
+            margin-right: 8px;
             margin-bottom: 8px;
             padding: 6px 14px;
             background-color: #2b6cb0;
@@ -64,33 +66,37 @@
             font-size: 1.35rem;
         }
         .jmp-box {
-            background-color: #ebf8ff;
-            border-left: 4px solid #3182ce;
-            padding: 20px;
+            background-color: #f7fafc;
+            border-left: 4px solid #2b6cb0;
+            padding: 22px;
             border-radius: 0 6px 6px 0;
             margin-top: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
         .paper-title {
             font-weight: bold;
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: #1a202c;
         }
         .authors {
             font-style: italic;
             color: #4a5568;
             font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .pointers {
+            margin-top: 10px;
+            padding-left: 18px;
+            font-size: 0.95rem;
+        }
+        .pointers li {
             margin-bottom: 6px;
         }
-        .abstract {
-            font-size: 0.95rem;
-            color: #2d3748;
-            margin-top: 8px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 18px;
+        .request-note {
+            margin-top: 14px;
+            font-size: 0.88rem;
+            color: #718096;
+            font-style: italic;
         }
         .badge {
             background-color: #2b6cb0;
@@ -100,6 +106,12 @@
             font-size: 0.75rem;
             font-weight: bold;
             letter-spacing: 0.5px;
+        }
+        ul.simple-list {
+            padding-left: 20px;
+        }
+        ul.simple-list li {
+            margin-bottom: 18px;
         }
     </style>
 </head>
@@ -111,8 +123,7 @@
             <h1>Alexandra Quiñones Nunura</h1>
             <p>PhD Candidate in Economics · University of York</p>
             <div class="links">
-                <a href="mailto:adqn500@york.ac.uk">Email</a>
-                <a href="CV_Quinones.pdf" target="_blank">CV (PDF)</a>
+                <a href="mailto:adqn500@york.ac.uk">Email Contact</a>
                 <a href="https://www.linkedin.com/in/alexandraqn/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/alexandraqn" target="_blank">GitHub</a>
             </div>
@@ -122,10 +133,10 @@
     <section>
         <h2>About Me</h2>
         <p>
-            I am an applied microeconomist completing my PhD in Economics at the University of York (Thesis submitted: Sep 2026; Viva: Dec 7, 2026), supervised by Prof. Luigi Siciliani and Dr. Sumit Mazumdar. 
+            I am an applied microeconomist completing my PhD in Economics at the University of York (Thesis submitted: Sep 2026; Viva: Dec 7, 2026), supervised by Prof. Luigi Siciliani and Dr. Sumit Mazumdar.
         </p>
         <p>
-            My research specializes in <strong>Applied Micro-econometrics</strong>, <strong>Health Economics</strong>, <strong>Labour Economics</strong>, and <strong>Development Economics</strong>. I bring 10 years of international policy evaluation experience working with the World Bank Group, the Clinton Health Access Initiative (CHAI), and EU framework programs.
+            My research combines advanced causal inference methods with 10 years of international policy evaluation experience across the World Bank Group, the Clinton Health Access Initiative (CHAI), and European Commission framework programs.
         </p>
     </section>
 
@@ -134,74 +145,84 @@
         <div class="jmp-box">
             <span class="badge">JOB MARKET PAPER</span>
             <div class="paper-title" style="margin-top: 10px;">
-                <a href="JMP_Quinones.pdf" target="_blank" style="color: #2b6cb0; text-decoration: none;">
-                    The Effect of Public Health Insurance on Labour Supply: Evidence from Indonesia's Askeskin Programme
-                </a>
+                The Effect of Public Health Insurance on Labour Supply: Evidence from Indonesia's Askeskin Programme
             </div>
             <div class="authors">with Dr. Julia Hatamyar</div>
-            <div class="abstract">
-                <strong>Abstract:</strong> We evaluate the impact of subsidized health insurance expansion on labor supply decisions using national household panel survey microdata from Indonesia (N = 13,000). Applying doubly robust difference-in-differences (DiD) estimation, we find that health insurance coverage mitigates health-related exits from informal sector employment while reducing working hours by 1.3 hours per week among female cohabitants without compromising overall labor force participation.
-            </div>
-            <div style="margin-top: 14px;">
-                <a href="JMP_Quinones.pdf" target="_blank" style="color: #2b6cb0; font-weight: bold;">[Download Full Paper PDF]</a>
+            
+            <ul class="pointers">
+                <li><strong>Research Question:</strong> Evaluates how subsidized public health insurance expansion influences labor market retention and working hours in developing economy settings.</li>
+                <li><strong>Data & Method:</strong> Applied doubly robust difference-in-differences (DiD) estimation on national household survey panel microdata (SUSENAS, <em>N = 13,000</em>).</li>
+                <li><strong>Key Findings:</strong> Subsidized coverage mitigates health-related exits from informal sector employment while reducing working hours by 1.3 hours/week among female cohabitants, without distorting overall labor force participation.</li>
+                <li><strong>Target Journal:</strong> <em>World Development</em> (Presented at EEA 2026, EuHEA 2026, HESG 2026).</li>
+            </ul>
+
+            <div class="request-note">
+                📄 <em>Full manuscript, online appendix, and code available via EconJobMarket or upon email request.</em>
             </div>
         </div>
     </section>
 
     <section>
-        <h2>Working Papers & Research in Progress</h2>
-        <ul>
+        <h2>Selected Working Papers & Research</h2>
+        <ul class="simple-list">
             <li>
-                <div class="paper-title">
-                    <a href="JMP_Quinones.pdf" target="_blank">The Impact of Expanding Child Health Insurance on Parental Labour Supply: Evidence from Mexico's Seguro Popular</a>
-                </div>
+                <div class="paper-title">The Impact of Expanding Child Health Insurance on Parental Labour Supply: Evidence from Mexico's Seguro Popular</div>
                 <div class="authors">Single-authored Working Paper</div>
-                <div class="abstract">
-                    Applies a Regression Discontinuity Design (RDD) at the age eligibility cutoff using 8 consecutive quarterly survey rounds of national Mexican Labour Force Survey (ENOE) microdata. Demonstrates that beneficiary mothers increased labor supply by 2 hours per month while overall employment effects remained neutral.
-                </div>
+                <ul class="pointers">
+                    <li><strong>Methodology:</strong> Sharp Regression Discontinuity Design (RDD) executed at the age eligibility cutoff across 8 consecutive quarterly rounds of Mexican Labour Force Survey (ENOE) microdata.</li>
+                    <li><strong>Core Result:</strong> Demonstrates that while overall parental employment remains neutral, mothers in beneficiary households increase labor supply by 2 hours per month.</li>
+                </ul>
+                <div class="request-note">📄 <em>Draft available upon request.</em></div>
             </li>
             <li>
                 <div class="paper-title">Hospitalisations and Labour Supply: Evidence from Indonesia</div>
                 <div class="authors">with Dr. Julia Hatamyar and Prof. Luigi Siciliani</div>
-                <div class="abstract">
-                    Applies parametric micro-econometric methods and matching techniques to evaluate household hospitalisation shocks, finding a 4-percentage point decrease in female cohabitant employment driven by caregiving burdens.
-                </div>
+                <ul class="pointers">
+                    <li><strong>Methodology:</strong> Micro-econometric modeling and matching techniques on panel microdata (SUSENAS).</li>
+                    <li><strong>Core Result:</strong> Identifies a 4-percentage point decrease in female cohabitant employment driven by household caregiving burdens following health shocks.</li>
+                </ul>
+                <div class="request-note">📄 <em>Draft available upon request.</em></div>
             </li>
             <li>
                 <div class="paper-title">The Relationship Between Insulin Prices and the COMISCA Joint Negotiation Mechanism</div>
                 <div class="authors">with Prof. R. Moreno-Serra, M. Campos, P. Lagos, and M. García Gonzales</div>
-                <div class="abstract">
-                    Deploys an event-study framework on pharmaceutical procurement data across 5 Central American countries.
-                </div>
+                <ul class="pointers">
+                    <li><strong>Methodology:</strong> Event-study framework applied to pharmaceutical procurement microdata across 5 Central American countries.</li>
+                </ul>
+                <div class="request-note">📄 <em>Research in progress.</em></div>
             </li>
         </ul>
     </section>
 
     <section>
-        <h2>Teaching & Awards</h2>
-        <ul>
-            <li><strong>Aronson Teaching Prize (2023):</strong> Awarded for outstanding undergraduate module teaching performance (Department of Economics, University of York).</li>
-            <li><strong>Graduate Teaching Assistant:</strong> Delivered undergraduate seminar series in Health Economics, Economic Data Analysis, Probability & Statistics, and Foundations of Economic History.</li>
+        <h2>Professional Experience Highlights</h2>
+        <ul class="pointers">
+            <li><strong>World Bank Group (2021–2024):</strong> Harmonized 250+ national labor force and household survey micro-datasets across 100+ LMICs for the Global Labour Database; peer-reviewed causal inference methodologies for health sector publications.</li>
+            <li><strong>Clinton Health Access Initiative (2019–2020):</strong> Senior Associate delivering health budget planning and cost-efficiency modeling for Global Fund ($600M budgeted) and Gates Foundation proposals in Malawi.</li>
+            <li><strong>NIRAS Denmark / EU Framework (2018–2022):</strong> Prepared technical evaluation frameworks for 20+ EU-funded public health projects (€30M–€200M+) across Southern Africa and Latin America.</li>
+            <li><strong>Liberian Institute of Statistics & Ministry of Energy Peru (2015–2017):</strong> Co-directed national survey sampling design; built tax micro-simulation models and rural energy subsidy evaluations.</li>
         </ul>
+        <div class="request-note" style="margin-top: 10px;">
+            📄 <em>Full academic CV available on EconJobMarket or upon email request.</em>
+        </div>
     </section>
 
     <section>
-        <h2>Selected Technical & Policy Reports</h2>
-        <ul>
-            <li><strong>World Bank (2025):</strong> Baseline Assessment of Results-Based Financing in Uganda & Resource Pooling Options for Health in Uganda.</li>
-            <li><strong>Government of Malawi (2020):</strong> National Strategic Plan for HIV/AIDS 2020-2025.</li>
-            <li><strong>Burnet Institute (2020):</strong> Improving Efficiency of the HIV Response in Malawi (Optima HIV Analysis).</li>
+        <h2>Teaching & Academic Recognition</h2>
+        <ul class="pointers">
+            <li><strong>Aronson Teaching Prize (2023):</strong> Awarded for outstanding undergraduate module teaching performance in Health Economics and Applied Econometrics at the University of York.</li>
+            <li><strong>Graduate Teaching Assistant (2022–2026):</strong> Delivered weekly seminars in Health Economics, Economic Data Analysis, Probability & Statistics, and Foundations of Economic History.</li>
         </ul>
     </section>
 
     <section>
         <h2>Education</h2>
-        <p>
-            <strong>PhD in Economics (Health Economics)</strong> — University of York, UK (2022 – 2026)<br>
-            <strong>Postgraduate Certificate in Infectious Diseases</strong> — LSHTM, UK (2020 – 2022)<br>
-            <strong>Master of Development Economics (Advanced)</strong> — University of Queensland, Australia (2013 – 2014)<br>
-            <strong>BSc in Economics Engineering and Business</strong> — Universidad Científica del Sur, Peru (2007 – 2011)
-        </p>
+        <ul class="pointers">
+            <li><strong>PhD in Economics (Health Economics):</strong> University of York, UK (2022–2026)</li>
+            <li><strong>Postgraduate Certificate in Infectious Diseases:</strong> London School of Hygiene & Tropical Medicine (LSHTM), UK (2020–2022)</li>
+            <li><strong>Master of Development Economics (Advanced):</strong> University of Queensland, Australia (2013–2014)</li>
+            <li><strong>BSc in Economics Engineering and Business:</strong> Universidad Científica del Sur, Peru (2007–2011)</li>
+        </ul>
     </section>
 
 </body>
