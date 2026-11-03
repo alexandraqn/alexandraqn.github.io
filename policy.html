@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Policy & International Experience | Alexandra Quiñones Nunura</title>
+    <title>Policy & Advisory | Alexandra Quiñones Nunura</title>
     <style>
         :root {
             --bg-color: #ffffff;
             --text-main: #171717;
             --text-muted: #666666;
             --border-color: #e5e5e5;
-            --accent-bg: #f9f9f9;
         }
 
         body {
@@ -30,10 +29,14 @@
             font-size: 0.9rem;
             color: var(--text-muted);
             text-decoration: none;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2px;
+            transition: border-color 0.2s ease;
         }
 
         .back-link:hover {
             color: var(--text-main);
+            border-color: var(--text-main);
         }
 
         h1 {
@@ -46,43 +49,7 @@
         .subtitle {
             color: var(--text-muted);
             margin-bottom: 36px;
-        }
-
-        .role-item {
-            margin-bottom: 32px;
-        }
-
-        .role-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 4px;
-        }
-
-        .role-title {
             font-size: 1.05rem;
-            font-weight: 600;
-        }
-
-        .role-date {
-            font-size: 0.88rem;
-            color: var(--text-muted);
-        }
-
-        .org-name {
-            font-size: 0.93rem;
-            color: var(--text-muted);
-            margin-bottom: 8px;
-        }
-
-        .pointers {
-            padding-left: 18px;
-            margin: 0;
-            font-size: 0.93rem;
-        }
-
-        .pointers li {
-            margin-bottom: 6px;
         }
 
         h2 {
@@ -93,68 +60,139 @@
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border-color);
         }
+
+        .role-list, .report-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .role-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 12px 0;
+            border-bottom: 1px dashed var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        .role-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .role-title {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .org-name {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        .role-date {
+            color: var(--text-muted);
+            font-size: 0.88rem;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+            margin-left: 16px;
+        }
+
+        .report-item {
+            padding: 10px 0;
+            font-size: 0.93rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .report-org {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        @media (max-width: 550px) {
+            .role-item {
+                flex-direction: column;
+                gap: 4px;
+            }
+            .role-date {
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 <body>
 
     <a href="index.html" class="back-link">← Back to Academic Homepage</a>
 
-    <h1>Policy & Advisory Experience</h1>
-    <p class="subtitle">10 years of international policy evaluation, survey microdata harmonization, and health financing advisory.</p>
+    <h1>Policy & Advisory Roles</h1>
+    <p class="subtitle">International development, health financing, and econometric policy evaluation.</p>
 
-    <div class="role-item">
-        <div class="role-header">
-            <span class="role-title">Short-Term Consultant (Health, Poverty & Labour Microdata)</span>
-            <span class="role-date">2021 – 2024</span>
-        </div>
-        <div class="org-name">The World Bank Group</div>
-        <ul class="pointers">
-            <li>Harmonized 250+ national labor force and household survey micro-datasets across 100+ LMICs for the Global Labour Database using Stata and R.</li>
-            <li>Executed survey microdata validation and quality assurance for the Global Monitoring Database.</li>
-            <li>Conducted technical peer reviews of causal inference methodologies for World Bank health sector publications.</li>
+    <section>
+        <h2>Positions</h2>
+        <ul class="role-list">
+            <li class="role-item">
+                <div class="role-info">
+                    <span class="role-title">Short-Term Consultant (Health, Poverty & Labour Microdata)</span>
+                    <span class="org-name">The World Bank Group</span>
+                </div>
+                <span class="role-date">2021 – 2024</span>
+            </li>
+            <li class="role-item">
+                <div class="role-info">
+                    <span class="role-title">Health Financing & Policy Consultant</span>
+                    <span class="org-name">NIRAS Denmark (European Commission Framework Contracts)</span>
+                </div>
+                <span class="role-date">2018 – 2022</span>
+            </li>
+            <li class="role-item">
+                <div class="role-info">
+                    <span class="role-title">Senior Associate, Sustainable Health Financing</span>
+                    <span class="org-name">Clinton Health Access Initiative (CHAI) — Malawi</span>
+                </div>
+                <span class="role-date">2019 – 2020</span>
+            </li>
+            <li class="role-item">
+                <div class="role-info">
+                    <span class="role-title">Resident Advisor (Statistics & Microdata)</span>
+                    <span class="org-name">World Bank Group / Liberian Institute of Statistics (LISGIS)</span>
+                </div>
+                <span class="role-date">2017</span>
+            </li>
+            <li class="role-item">
+                <div class="role-info">
+                    <span class="role-title">Econometric Modelling & Policy Consultant</span>
+                    <span class="org-name">Liberia Revenue Authority (IMF / Donor Funded)</span>
+                </div>
+                <span class="role-date">2016 – 2017</span>
+            </li>
+            <li class="role-item">
+                <div class="role-info">
+                    <span class="role-title">Econometric Policy Consultant</span>
+                    <span class="org-name">Ministry of Energy and Mines, Peru</span>
+                </div>
+                <span class="role-date">2015 – 2016</span>
+            </li>
         </ul>
-    </div>
+    </section>
 
-    <div class="role-item">
-        <div class="role-header">
-            <span class="role-title">Health Financing & Policy Consultant</span>
-            <span class="role-date">2018 – 2022</span>
-        </div>
-        <div class="org-name">NIRAS Denmark (European Commission Framework Contracts)</div>
-        <ul class="pointers">
-            <li>Managed technical grant applications and evaluation frameworks across 20+ EU-funded public health projects (€30M to €200M+) in Southern Africa and Latin America.</li>
+    <section>
+        <h2>Technical Reports</h2>
+        <ul class="report-list">
+            <li class="report-item">
+                <span class="report-org">World Bank (2025):</span> Baseline Assessment of Results-Based Financing in Uganda
+            </li>
+            <li class="report-item">
+                <span class="report-org">World Bank (2025):</span> Resource Pooling Options for Health in Uganda
+            </li>
+            <li class="report-item">
+                <span class="report-org">Government of Malawi (2020):</span> National Strategic Plan for HIV/AIDS 2020–2025
+            </li>
+            <li class="report-item">
+                <span class="report-org">Burnet Institute (2020):</span> Improving Efficiency of the HIV Response in Malawi (Optima HIV Analysis)
+            </li>
         </ul>
-    </div>
-
-    <div class="role-item">
-        <div class="role-header">
-            <span class="role-title">Senior Associate, Sustainable Health Financing</span>
-            <span class="role-date">2019 – 2020</span>
-        </div>
-        <div class="org-name">Clinton Health Access Initiative (CHAI) — Lilongwe, Malawi</div>
-        <ul class="pointers">
-            <li>Provided technical advisory to Ministry of Health officials on budget planning, cost-efficiency modeling, and quantitative forecasting for Global Fund ($600M budgeted / $300M awarded) and Gates Foundation proposals.</li>
-        </ul>
-    </div>
-
-    <div class="role-item">
-        <div class="role-header">
-            <span class="role-title">Resident Advisor (Statistics & Microdata)</span>
-            <span class="role-date">2017</span>
-        </div>
-        <div class="org-name">World Bank Group / Liberian Institute of Statistics (LISGIS) — Monrovia, Liberia</div>
-        <ul class="pointers">
-            <li>Co-directed execution of national household survey sampling design, field data collection, and microdata quality control.</li>
-        </ul>
-    </div>
-
-    <h2>Selected Policy Technical Reports</h2>
-    <ul class="pointers">
-        <li><strong>World Bank (2025):</strong> Baseline Assessment of Results-Based Financing in Uganda.</li>
-        <li><strong>World Bank (2025):</strong> Resource Pooling Options for Health in Uganda.</li>
-        <li><strong>Government of Malawi (2020):</strong> National Strategic Plan for HIV/AIDS 2020-2025.</li>
-        <li><strong>Burnet Institute (2020):</strong> Improving Efficiency of the HIV Response in Malawi (Optima HIV Analysis).</li>
-    </ul>
+    </section>
 
 </body>
 </html>
